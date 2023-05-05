@@ -16,7 +16,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", privileged: true, inline: <<-SHELL
   sudo apt-get update
   yes y | sudo apt-get upgrade
-  config.vm.provision :file, source: '~/setup.sh', destination: '~/setup.sh'
  
   
   SHELL
